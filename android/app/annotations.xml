@@ -1,0 +1,5 @@
+<root>
+    <item name='android.app.ProgressDialog void setMessage(java.lang.CharSequence)'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

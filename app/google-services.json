@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "968657609980",
+    "firebase_url": "https://myfirebaseauthapp-566fa.firebaseio.com",
+    "project_id": "myfirebaseauthapp-566fa",
+    "storage_bucket": "myfirebaseauthapp-566fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968657609980:android:77e39b42627a9da9",
+        "android_client_info": {
+          "package_name": "com.example.hicran.userregistration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968657609980-oog2fuj162qcfniv8bhj7she7jrd86ou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hicran.userregistration",
+            "certificate_hash": "5755bffe0ffe358517fb28b32a11c3f2436f801d"
+          }
+        },
+        {
+          "client_id": "968657609980-lfe9esneo3t8k7hpsjbnmocg3pv8fu11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPdkCKdV2I0oTvZ_Lv7tmcP0yQwLo4NAQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968657609980-lfe9esneo3t8k7hpsjbnmocg3pv8fu11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
