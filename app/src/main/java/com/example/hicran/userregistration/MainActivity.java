@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         //checking if success
                         if (task.isSuccessful()){
+                            Toast.makeText(MainActivity.this,"MainActivity Access",Toast.LENGTH_SHORT).show();
                             finish();
                             startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
                         }else{
