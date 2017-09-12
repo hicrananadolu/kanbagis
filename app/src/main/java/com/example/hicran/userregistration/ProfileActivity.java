@@ -1,19 +1,11 @@
 package com.example.hicran.userregistration;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,8 +14,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import java.io.FileReader;
 
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -44,15 +34,17 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        Toast.makeText(ProfileActivity.this,"ProfileActivity Access",Toast.LENGTH_SHORT).show();
 
-        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
 
-        if(firebaseAuth.getCurrentUser()==null){
+        if(firebaseAuth.getCurrentUser()== null){
             startActivity(new Intent(this,LoginActivity.class));
         }
 
         else if (firebaseAuth.getCurrentUser()!= null){
-            startActivity(new Intent(this,ProfileActivity.class));
+            //startActivity(new Intent(this,ProfileActivity.class));
+            //Zaten ProfileActivity desin.ProfileActivity'e sonsuz döngü yaratmış oluyorsun !!!
         }
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
